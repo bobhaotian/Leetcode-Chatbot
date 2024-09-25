@@ -1,0 +1,65 @@
+.credit-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    background: linear-gradient(to right, #b0d4f7, rgb(238, 238, 242));
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh; /* Ensure full height */
+    justify-content: center; /* Center content vertically */
+  }
+  
+  .credit-page h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: rgb(34, 32, 32);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -90px; /* Move the title up */
+  }
+  
+  .credit-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .credit-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    margin: 20px; /* Add margin to spread out boxes */
+  }
+  
+  .credit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .avatar {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .credit-info {
+    padding: 20px;
+  }
+  
+  .credit-info h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #007BFF;
+  }
+  
+  .credit-info p {
+    font-size: 1rem;
+    color: #666;
+  }
+  

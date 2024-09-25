@@ -1,0 +1,151 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* Make sure it takes full width */
+  background-color: #fffbc3; /* Ensure white background */
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  width: 95%;
+  text-align: left;
+  padding: 20px;
+  left: 200px;
+}
+
+.title-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  width: 95%; /* Make sure it takes full width */
+  height: calc(100% - 160px); /* Adjust height to fit within viewport */
+  margin: 20px 0;
+}
+
+.input-container, .output-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #FFFEE3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-box, .output-box {
+  width: 500%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #f5f5f5; /* Adjust to match your design */
+}
+
+.input-caption, .output-caption {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.input-box, .output-box {
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 22, 79, 0.8); /* Light background color for text areas */
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to match the design */
+}
+
+.input-box::placeholder, .output-box::placeholder {
+  color: #170a0a;
+}
+
+.divider {
+  width: 1px;
+  background-color: #ccc;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.generate-button {
+  background-color: #FECB69;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #1f3242;
+}
+
+.generate-button:hover {
+  background-color: #ffb84d;
+}
+
+.generate-button:active {
+  background-color: #e6a845;
+}
+
+.credit-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FECB69;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #1f3242;
+  text-decoration: none;
+  text-align: center;
+}
+
+.credit-button:hover {
+  background-color: #ffb84d;
+}
+
+.credit-button:active {
+  background-color: #e6a845;
+}
+
+.history-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px; /* Position the button on the left bottom corner */
+  background-color: #FECB69;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #1f3242;
+  text-decoration: none;
+  text-align: center;
+}
+
+.history-button:hover {
+  background-color: #ffb84d;
+}
+
+.history-button:active {
+  background-color: #e6a845;
+}

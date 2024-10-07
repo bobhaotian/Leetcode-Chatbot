@@ -11,7 +11,7 @@ This repository contains an AI chatbot fine-tuned using **GPT-4o** to provide ef
 
 ### 1. Data Preparation
 We start by preparing the training data. This involves:
-- **Python Crawler**: We implemented a Python web crawler to collect user solutions that mentions they have great runtime efficiency like "beat ..." in their titles from LeetCode for problems tagged with:
+- **Python Crawler**: We implemented a Python web crawler to collect user solutions marked as "beat 100%" or "O(1)" from LeetCode for problems tagged with:
   - Array, String, Hash Table, Dynamic Programming, Math, Sorting, Greedy, Depth-First Search, Database, Binary Search, Matrix, Breadth-First Search, Tree, Bit Manipulation, Two Pointers, Binary Tree, Heap (Priority Queue), Prefix Sum.
   
   For each question, we collected **5 top user solutions**.
@@ -53,8 +53,17 @@ We developed a user-friendly interface where users can interact with the fine-tu
    npm run dev
    ```
    
-6. Enter localhost
+6. Enter http://localhost:5173/ (default) then you can see
+<img width="1509" alt="Screenshot 2024-10-07 at 1 49 17 AM" src="https://github.com/user-attachments/assets/72ab88e0-d30b-46b7-afa8-cb915a218bcf">
 
+7. Type in any coding question, either the full description or a link, then click 'Generate'
+<img width="1510" alt="Screenshot 2024-10-07 at 1 51 47 AM" src="https://github.com/user-attachments/assets/097ecefc-f738-4eaa-8efa-3c5bd539460f">
+
+8. Wait for 2-5 seconds, the python solution with the template that Leetcode wants shows on the right
+![image](https://github.com/user-attachments/assets/e6d4d172-c0af-44a7-8405-a73c3c2bc52b)
+
+9. See the history by clicking 'History' button
+<img width="1512" alt="Screenshot 2024-10-07 at 1 54 30 AM" src="https://github.com/user-attachments/assets/51a55877-e7f0-4f8b-88b5-b73f5940fc81">
 
 
 ## Tags Supported

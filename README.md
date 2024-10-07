@@ -11,7 +11,7 @@ This repository contains an AI chatbot fine-tuned using **GPT-4o** to provide ef
 
 ### 1. Data Preparation
 We start by preparing the training data. This involves:
-- **Python Crawler**: We implemented a Python web crawler to collect user solutions marked as "beat 100%" or "O(1)" from LeetCode for problems tagged with:
+- **Python Crawler**: We implemented a Python web crawler to collect user solutions that mentions they have great runtime efficiency like "beat ..." in their titles from LeetCode for problems tagged with:
   - Array, String, Hash Table, Dynamic Programming, Math, Sorting, Greedy, Depth-First Search, Database, Binary Search, Matrix, Breadth-First Search, Tree, Bit Manipulation, Two Pointers, Binary Tree, Heap (Priority Queue), Prefix Sum.
   
   For each question, we collected **5 top user solutions**.
@@ -32,18 +32,30 @@ We developed a user-friendly interface where users can interact with the fine-tu
     git clone https://github.com/yourusername/leetcode-ai-chatbot.git
     cd leetcode-ai-chatbot
     ```
-
+    
 2. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+   Please look at gptModel.py, and install all the required dependencies using pip
+   The do
+   ```bash
+   npm i
+   ```
+   
+3. Go to platform.openai.com to generate an API key and replace the one in gptModel.py
 
-3. Start the chatbot interface:
+   
+4. Set up the flask server:
     ```bash
-    python app.py
+    python3 gptModel.py
     ```
+    
+5. Start the user interface:
+   ```bash
+   npm run dev
+   ```
+   
+6. Enter localhost
 
-4. Enter a LeetCode problem description, and the chatbot will generate an optimized solution.
+
 
 ## Tags Supported
 The chatbot supports problems in the following categories:
@@ -74,5 +86,9 @@ The chatbot supports problems in the following categories:
 ## Contributing
 We welcome contributions! If you'd like to help improve the chatbot, feel free to open a pull request or issue.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Credits
+Robert Bao
+Yiyun Zhang
+Steven Zhu
+
+
